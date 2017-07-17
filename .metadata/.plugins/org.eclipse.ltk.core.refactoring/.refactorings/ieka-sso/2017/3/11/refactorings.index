@@ -1,0 +1,15 @@
+1489413912205	Delete element
+1489414226295	Delete element
+1489418216125	Extract local variable 'criteria'
+1489418473187	Extract local variable 'list'
+1489420702205	Extract local variable 'result'
+1489459536290	Extract local variable 'result'
+1489461909077	Extract local variable 'criteria'
+1489462570137	Extract local variable 'list'
+1489462794824	Extract local variable 'tbUser'
+1489463049192	Extract local variable 'string'
+1489464046851	Extract local variable 'result'
+1489465876840	Extract local variable 'string'
+1489466292829	Extract local variable 'result'
+1489470875812	Move 3 resources to 'webapp'
+1489471790569	Move 3 resources to 'WEB-INF'

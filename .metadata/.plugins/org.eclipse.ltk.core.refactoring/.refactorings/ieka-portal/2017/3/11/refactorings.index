@@ -1,0 +1,21 @@
+1489321076581	Extract local variable 'json'
+1489321182697	Extract local variable 'iekaResult'
+1489322140446	Extract local variable 'searchResult'
+1489328346725	Delete element
+1489329350907	Copy compilation units
+1489329363383	Delete element
+1489387536703	Extract local variable 'json'
+1489387637476	Extract local variable 'result'
+1489387988219	Extract local variable 'result'
+1489483887934	Extract local variable 'token'
+1489485662396	Extract local variable 'json'
+1489485699312	Extract local variable 'tbUser'
+1489485735038	Extract local variable 'result'
+1489485762616	Extract local variable 'data'
+1489485913425	Extract local variable 'user'
+1489549584601	Extract local variable 'json'
+1489549656973	Extract local variable 'iekaResult'
+1489550606664	Extract local variable 'cartJson'
+1489550761578	Extract local variable 'list'
+1489550898445	Extract local variable 'cartItemList'
+1489556741437	Extract local variable 'result'

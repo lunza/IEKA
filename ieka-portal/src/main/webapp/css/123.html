@@ -1,0 +1,115 @@
+1 <!DOCTYPE html>
+2 <html>
+3 <head>
+    4     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    5     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    6     <title>Hello, World</title>
+    7     <style type="text/css">
+    8         html
+    9         {
+        10             height: 100%;
+        11         }
+    12         body
+    13         {
+        14             height: 50%;
+        15             margin: 0px;
+        16             padding: 0px;
+        17         }
+    18         #container
+    19         {
+        20             width:500px;
+        21             height: 500px;
+        22         }
+    23     </style>
+    24     <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3"></script>
+    25 </head>
+26 <body onload="enter()">
+27     <div id="container">
+    28     </div>
+29     <input id="lng" type="hidden" runat="server" />
+30     <input id="lat" type="hidden" runat="server" />
+31
+32     <script type="text/javascript">
+    33
+    34
+    35         var province=0;
+    36         var city=0;
+    37         var district=0;
+    38         var street=0;
+    39
+    40
+    41
+    42         function enter() {
+        43             if (navigator.geolocation) {  //调用导航器geolocation函数
+            44                 navigator.geolocation.getCurrentPosition(loand); //进入总显示函数loand，函数名由自己定
+            45             } else {
+            46                 alert("您的浏览器不支持地理定位");//不支持
+            47             }
+        48         }
+    49         function loand(position) {  //主函数
+        50             var lat = position.coords.latitude;//y，纬度，通过上面的getCurrentPosition函数定位浏览器位置，从而获取地址
+        51             var lon = position.coords.longitude;//x，经度
+        52             //alert(lat);
+        53             var map = new BMap.Map("container"); //初始化地图类
+        54             var point = new BMap.Point(lon,lat); //这里设置刚开始的点所在处
+        55             var gc = new BMap.Geocoder();  //初始化，Geocoder类
+        56             gc.getLocation(point, function (rs) {   //getLocation函数用来解析地址信息，分别返回省市区街等
+            57                 var addComp = rs.addressComponents;
+            58                 province = addComp.province;//获取省份
+            59                 city = addComp.city;//获取城市
+            60                 district = addComp.district;//区
+            61                 street = addComp.street;//街
+            62
+            63
+            64                 var marker = new BMap.Marker(point); //地图事件类
+            65                 var opts = {
+                66                     width: 25,     // 信息窗口宽度
+                    67                     height: 120,     // 信息窗口高度
+                    68                     title: "我所在的地点:<hr />"  // 信息窗口标题 ，这里声明下，可以在自己输出的信息里面嵌入html标签的
+            69                 }
+        70                 var infoWindow = new BMap.InfoWindow("省份:" + province + ";" + "城市:"
+        71                     + city + ";<br /><br />" + "县/区:" + district + ";" + "街道:" + street + ".", opts);
+        72                 // 创建信息窗口对象，把信息在初始化 地图信息窗口类的同时写进去
+        73
+        74
+        75                 marker.enableDragging(); //启用拖拽事件
+        76                 marker.addEventListener("dragend", function (e) {
+            77                     gc.getLocation(point, function (rs) {
+                78                         //由于在getLocation函数返回信息之前，首先执行它下面的代码的，所以要把重新拖动后的代码放到它里面
+                79                         var addComp = rs.addressComponents;
+                80                         province = addComp.province;//获取省份
+                81                         city = addComp.city;//获取城市
+                82                         district = addComp.district;//区
+                83                         street = addComp.street;//街
+                84                         opts = {
+                    85                             width: 25,     // 信息窗口宽度
+                        86                             height: 160,     // 信息窗口高度
+                        87                             title: "现在的位置:<hr />"  // 信息窗口标题
+                88                         }
+            89                         point = new BMap.Point(e.point.lng, e.point.lat); //标记新坐标（拖拽以后的坐标）
+            90                         marker = new BMap.Marker(point);  //事件类
+            91
+            92
+            93                         infoWindow = new BMap.InfoWindow("省份:" + province + ";" + "城市:"
+            94                         + city + ";<br /><br />" + "县/区:" + district + ";" + "街道:" + street + ".<br />" +
+            95                             "经度：" + e.point.lng + "<br />纬度：" + e.point.lat, opts);
+            96
+            97                         map.openInfoWindow(infoWindow, point);
+            98                         //这条函数openInfoWindow是输出信息函数，传入信息类和点坐标
+            99                     })
+        100                 })
+    101
+    102                 map.addControl(new BMap.NavigationControl()); //左上角控件
+    103                 map.enableScrollWheelZoom(); //滚动放大
+    104                 map.enableKeyboard(); //键盘放大
+    105
+    106                 map.centerAndZoom(point, 13); //绘制地图
+    107                 map.addOverlay(marker); //标记地图
+    108
+    109                 map.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口
+    110             });
+    111          }
+    112
+    113     </script>
+114   </body>
+115 </html>

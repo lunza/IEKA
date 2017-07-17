@@ -1,0 +1,11 @@
+INDEX VERSION 1.3+F:\IEKA\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+353564594.index
+2145146596.index
+2144610412.index
+1914822549.index
+3265737526.index
+2272347657.index
+1980450524.index
+937175919.index
+1374017152.index
+2290246456.index

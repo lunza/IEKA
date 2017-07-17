@@ -1,0 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<div id="footer-2013">
+	<div class="links"><a href="http://www.jd.com/intro/about.aspx" target="_blank" rel="nofollow">关于我们</a>|<a href="http://www.jd.com/contact/" target="_blank" rel="nofollow">联系我们</a>|<a href="http://zhaopin.jd.com/" target="_blank" rel="nofollow">人才招聘</a>|<a href="http://www.jd.com/contact/joinin.aspx" target="_blank" rel="nofollow">机构入驻</a>|<a href="http://jzt.jd.com" target="_blank" rel="nofollow">咨询中心</a>|<a href="http://app.jd.com/" target="_blank" rel="nofollow">手机宜家</a>|<a href="http://club.jd.com/links.aspx" target="_blank">友情链接</a>|<a href="http://media.jd.com/" target="_blank">医疗联盟</a>|<a target="_blank" href="http://club.jd.com/">宜家医社区</a>|<a target="_blank" href="http://gongyi.jd.com">爱心公益</a>|<a target="_blank" href="http://en.jd.com/">English Site</a></div>
+</div>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="273" key="DIALOG_WIDTH"/>
+		<item value="246" key="DIALOG_Y_ORIGIN"/>
+		<item value="904" key="DIALOG_X_ORIGIN"/>
+		<item value="400" key="DIALOG_HEIGHT"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="IEKAResult" key="selection"/>
+		<list key="findhistory">
+			<item value="TaotaoResult"/>
+			<item value="taotao"/>
+			<item value="IEKAResult"/>
+			<item value="fore"/>
+			<item value="var data"/>
+			<item value="getDataService"/>
+			<item value="root61"/>
+			<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;"/>
+		</list>
+		<list key="replacehistory">
+			<item value="IEKAResult"/>
+			<item value="ieka"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,11 @@
+com\ieka\mapper\TbContentMapper.class
+com\ieka\mapper\TbItemDescMapper.class
+com\ieka\mapper\TbItemCatMapper.class
+com\ieka\mapper\TbOrderItemMapper.class
+com\ieka\mapper\TbItemParamMapper.class
+com\ieka\mapper\TbUserMapper.class
+com\ieka\mapper\TbOrderMapper.class
+com\ieka\mapper\TbContentCategoryMapper.class
+com\ieka\mapper\TbItemParamItemMapper.class
+com\ieka\mapper\TbOrderShippingMapper.class
+com\ieka\mapper\TbItemMapper.class

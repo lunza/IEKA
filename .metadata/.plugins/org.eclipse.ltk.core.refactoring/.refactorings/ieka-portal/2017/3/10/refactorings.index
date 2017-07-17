@@ -1,0 +1,19 @@
+1488975534900	Delete element
+1488975583995	Delete element
+1488975668741	Delete element
+1488975969514	Move 3 resources to 'resources'
+1489030881261	Copy file
+1489030909524	Rename resource '商品分类数据格式.txt'
+1489031092086	Rename resource 'catagory.json'
+1489031557633	Move 'category.json' to 'webapp'
+1489041672102	Delete element
+1489071570151	Extract local variable 'response'
+1489071691191	Extract local variable 'statusCode'
+1489071728341	Extract local variable 'entity'
+1489071763094	Extract local variable 'string'
+1489117130242	Extract local variable 'result'
+1489117239560	Extract local variable 'iekaResult'
+1489118157770	Extract local variable 'contentList'
+1489119351523	Delete element
+1489119365539	Delete element
+1489119430512	Rename package 'com.ieka.potal.service.impl'

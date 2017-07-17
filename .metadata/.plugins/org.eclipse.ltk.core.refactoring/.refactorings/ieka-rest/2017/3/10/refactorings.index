@@ -1,0 +1,24 @@
+1488974616898	Copy folder
+1488975510370	Copy elements
+1489034429475	Rename type 'CatService'
+1489036804283	Extract local variable 'criteria'
+1489036947313	Extract local variable 'criteria'
+1489037015171	Extract local variable 'list'
+1489039200381	Extract local variable 'itemCatList'
+1489039278890	Extract local variable 'json'
+1489067745740	Extract local variable 'Criteria'
+1489067822598	Extract local variable 'list'
+1489069456084	Extract local variable 'result'
+1489118906642	Delete element
+1489118911641	Delete element
+1489119256095	Copy files
+1489140483117	Extract local variable 'string'
+1489143704815	Extract local variable 'string'
+1489203593054	Extract local variable 'bean'
+1489203639141	Extract local variable 'jedis'
+1489203678523	Extract local variable 'string'
+1489208138284	Extract local variable 'resource'
+1489209932924	Extract local variable 'json'
+1489210348612	Extract local variable 'result'
+1489210659968	Extract local variable 'json'
+1489215979315	Extract local variable 'result'
